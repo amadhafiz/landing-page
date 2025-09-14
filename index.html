@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#4CAF50">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>About Me</title>
+
+        <!-- tailwind css cdn -->
+         <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 text-gray-900">
+
+          <div class="max-w-3xl mx-auto p-6 bg-white rounded-xl shadow-md mt-10">
+              <h1 class="text-4xl font-bold mb-4 text-center">About Me</h1>
+
+                  <p class="text-lg mb-4">Hi! My name is <span class="font-semibold">Your Name</span>. I am passionate about web development and building interactive, responsive web apps. I love learning new technologies and exploring creative ideas.</p>
+
+                      <h2 class="text-2xl font-semibold mt-6 mb-2">Hobbies</h2>
+                          <ul class="list-disc list-inside mb-4">
+                                <li>Coding</li>
+                                      <li>Reading Tech Blogs</li>
+                                            <li>Photography</li>
+                                                </ul>
+
+                                                    <h2 class="text-2xl font-semibold mt-6 mb-2">Contact Me</h2>
+                                                        <p>Email: <a href="mailto:youremail@example.com" class="text-blue-500 underline">youremail@example.com</a></p>
+                                                            <p>Phone: (123) 456-7890</p>
+                                                              </div>
+
+        <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('Service Worker registered', reg))
+      .catch(err => console.log('Service Worker failed', err));
+    });
+  }
+</script>
+
+    </body>
+    </html>
